@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&family=Roboto:wght@100&display=swap');
+:root {
+    --success: rgb(0, 128, 0);
+    --success-light: rgba(0, 128, 0, 0.4);
+    --warning: rgb(255, 165, 0);
+    --warning-light: rgba(255, 165, 0, 0.4);
+    --error: rgb(255, 0, 0);
+    --error-light: rgba(255, 0, 0, 0.4);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #ecf0f1, #ecf0f1);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+}
+
+.container {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+}
+.box {
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+.box1 {
+    background: var(--success);
+}
+.box2 {
+    background: var(--warning);
+}
+.box3 {
+    background: var(--error);
+}
+.alerts {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+.alert {
+    color: white;
+    padding: 12px 30px 12px 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    animation: slide_show 3s ease forwards;
+    /* animation: slide_hide 2s ease forwards; */
+}
+.alert.success {
+    border-left: 5px solid var(--success);
+    background: var(--success-light);
+}
+.alert.warning {
+    border-left: 5px solid var(--warning);
+    background: var(--warning-light);
+}
+.alert.error {
+    border-left: 5px solid var(--error);
+    background: var(--error-light);
+}
+.alert i {
+    margin: 0px 10px;
+}
+
+.alert .countdown {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+}
+.alert.success .countdown {
+    background: var(--success);
+    animation: show_countdown 3s ease forwards;
+}
+.alert.warning .countdown {
+    background: var(--warning);
+    animation: show_countdown 3s ease forwards;
+}
+.alert.error .countdown {
+    background: var(--error);
+    animation: show_countdown 3s ease forwards;
+}
+
+@keyframes show_countdown {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes slide_show {
+    0% {
+        transform: translateX(100%);
+    }
+    25% {
+        transform: translateX(-10%);
+    }
+    50% {
+        transform: translateX(3%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes slide_hide {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(5%);
+    }
+    50% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(150%);
+    }
+}
