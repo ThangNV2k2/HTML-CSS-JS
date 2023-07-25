@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&family=Roboto:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #d4cb04, #a0b207);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+}
+
+.container {
+    width: 350px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container form {
+    width: 100%;
+    border-bottom: 2px solid silver;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+}
+
+form input {
+    font-size: 22px;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-right: 25px;
+}
+
+form button {
+    padding: 0px 12px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background: #9acd32;
+    color: white;
+    cursor: pointer;
+}
+
+.todos {
+    width: 100%;
+    padding: 12px 17px;
+}
+
+.todos li {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 7px 0px;
+    font-size: 20px;
+    border-bottom: 1px solid #aaa;
+    width: 100%;
+}
+li i {
+    padding-top: 8px;
+    font-size: 15px;
+    color: rgb(63, 62, 62);
+    margin-left: 10px;
+}
+.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+}
+.completed i {
+    color: #aaa;
+}
+
+.container .remove {
+    margin: 10px 15px;
+    padding: 5px 10px;
+    border: none;
+    background: #9acd32;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+}
