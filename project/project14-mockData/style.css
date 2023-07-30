@@ -81,6 +81,6 @@ body {
 .products h5 {
     text-align: center;
 }
-.hide {
+.product.hide {
     display: none;
 }
