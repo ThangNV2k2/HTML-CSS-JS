@@ -16,7 +16,6 @@ function toggleAnimation(element) {
 function checkAnimation() {
     animationElements.forEach((el) => {
         toggleAnimation(el)
-        console.log(el)
     })
 }
 
