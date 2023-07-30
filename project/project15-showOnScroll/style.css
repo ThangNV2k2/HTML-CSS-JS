@@ -58,7 +58,7 @@ body {
 
 #team .box {
     width: 200px;
-    height: 200px;
+    /* height: 200px; */
     background: white;
     padding: 15px;
     border-radius: 10px;
@@ -70,4 +70,26 @@ body {
     font-size: 22px;
     color: #2e7c2a;
     margin-bottom: 20px;
+}
+
+.left-to-right {
+    transform: translateX(-200%);
+    transition: 1s;
+}
+.left-to-right.start {
+    transform: translateX(0);
+}
+.right-to-left {
+    transform: translateX(200%);
+    transition: 1s;
+}
+.right-to-left.start {
+    transform: translateX(0);
+}
+.zoom {
+    transform: scale(0);
+    transition: 1s;
+}
+.zoom.start {
+    transform: scale(1);
 }
