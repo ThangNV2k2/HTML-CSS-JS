@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tool">
+        <input id="color" type="color">
+        <button id="eraser">
+            <i class="fa-solid fa-eraser"></i>
+        </button>
+        <button id="decrease">-</button>
+        <button id="size">15</button>
+        <button id="crease">+</button>
+        <button id="download">
+            <a id="save" download="file.jpg">
+                <i class="fa-regular fa-floppy-disk"></i>
+            </a>
+        </button>
+        <button id="close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="container">
+        <canvas width="600px" height="600px"></canvas>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
