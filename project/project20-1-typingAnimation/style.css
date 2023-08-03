@@ -1,0 +1,44 @@
+:root {
+    --primary: #a4ee00; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing-wrapper p{
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 70px;
+    text-shadow: 0 0 100px var(--primary);
+    animation: typing 5s steps(22) infinite, blink 1s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    0%, 100% {
+        width: 0%;
+    }
+    85% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 100%{
+        border-right: 10px solid var(--primary);
+    }
+    50% {
+        border-right: 10px solid transparent;
+    }
+}
