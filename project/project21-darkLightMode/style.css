@@ -1,0 +1,113 @@
+:root {
+    --primary: #396cf3;
+     --success: #61af52;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.toggle-wrapper {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    margin-left: 50px;
+    width: 60px;
+    height: 30px;
+    background: #aaaaaa;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.toggle-wrapper label {
+    width: 28px;
+    height: 30px;
+    background: white;
+    display: block;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.toggle-wrapper input:checked + label{
+    margin-left: 32px;
+}
+h1{
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+
+.content {
+    width: 1100px;
+    font-size: 20px;
+    background: #dadada;
+    padding: 30px;
+    border-radius: 15px;
+    color: #333333;
+}
+
+button {
+    margin: 40px 80px 10px 50px;
+    padding: 10px 15px;
+    background: var(--primary);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button a {
+    color: white;
+    text-decoration: none;
+}
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark {
+    background: #2d2c2d;
+}
+
+.dark .name {
+    color: var(--success);
+}
+.dark .toggle-wrapper {
+    background-color: var(--success);
+}
+.dark h1 {
+    color: var(--success);
+}
+.dark .content {
+    background: #3b3a3b;
+    color: white;
+}
+.dark .content button {
+    background: var(--success);
+}
