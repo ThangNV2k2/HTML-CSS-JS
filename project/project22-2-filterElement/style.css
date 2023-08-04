@@ -1,0 +1,66 @@
+:root {
+    --primary: #3f9d57; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 80px auto;
+    margin-bottom: auto;
+    background: #e4f3e2;
+    width: 1200px;
+    border-radius: 20px;
+    padding: 20px 80px;
+    text-align: center;
+}
+.btn button {
+    padding: 10px 40px;
+    font-weight: bold;
+    background: white;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover,
+button.active {
+    color: white;
+    background: var(--primary);
+}
+.btn {
+    margin-bottom: 40px;
+}
+
+.img-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img-list .img {
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+}
+img:hover{
+    transform: scale(2) rotate(90deg);
+}
