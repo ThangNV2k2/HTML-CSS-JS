@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dadada;
+}
+
+.zoomer img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    cursor: none;
+}
+
+.zoomer .zoom {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    cursor: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+.hide {
+    display: none;
+}
